@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2020_03_01_082323) do
     t.string "saying"
     t.string "character"
     t.string "where"
+    t.string "when"
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
