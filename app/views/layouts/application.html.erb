@@ -25,6 +25,22 @@
 
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "this isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Set up for possible link <a href="[my_site_here]">[My site here]</a><br />
+            FPO FPO FPO- <a href="www.google.com"> Learn more FPO
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
