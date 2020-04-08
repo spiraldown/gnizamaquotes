@@ -12,13 +12,15 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         FPOLOGO
+        <% end %>
       </div>
       <div class="col-4">
         A place to find and add your favorite animation or anime quotes!
       </div>
       <div class="col-5">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -33,7 +35,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "this isn't enough, I need more", "#", class: 'next-quote' %>
+            <%= link_to "this isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Set up for possible link <a href="[my_site_here]">[My site here]</a><br />
